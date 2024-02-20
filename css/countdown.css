@@ -163,7 +163,7 @@ a:hover {
 
 @media screen and (max-width: 768px) {
     body {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     h1,
@@ -171,20 +171,20 @@ a:hover {
     h3,
     h4,
     h5 {
-        font-size: 3em;
+        font-size: 2em;
     }
 
     p,
     span {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     a {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .container {
-        padding: 20px;
+        padding: 10px;
     }
 
     .hero {
@@ -194,6 +194,29 @@ a:hover {
     }
 
     .hero .hero-body {
-        padding: 2rem 0;
+        padding: 1rem 0;
+    }
+
+    .section.pair .pair-steps .step .step-number .value {
+        font-size: 2rem;
+    }
+
+    .hero .hero-body .counter .title {
+        font-size: 4.5rem;
+        margin-bottom: 0.625rem;
+    }
+
+    .hero .hero-body .counter .counter-boxes .count-box {
+        width: 90px;
+        height: 90px;
+    }
+
+    .hero .hero-body .counter .counter-boxes .count-box h1 {
+        font-size: 3.5rem;
+        line-height: 3rem;
+    }
+
+    .hero .hero-body .counter .counter-boxes .count-box span {
+        font-size: 0.625rem;
     }
 }
