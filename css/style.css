@@ -37,7 +37,7 @@
 
 .navbar-light .navbar-toggler-icon {
     background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
-    width: 20px;
+    width: 15px;
     height: 20px;
 }
 
@@ -474,6 +474,11 @@ h6,
 
 .copyright a:hover {
     color: var(--tertiary);
+}
+
+.footer-mini {
+    background: #3f66fc;
+
 }
 
 /*VIDEO*/
