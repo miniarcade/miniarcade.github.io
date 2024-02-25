@@ -1,45 +1,449 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MiniArcade Studios</title>
-  <link rel="stylesheet" href="./css/countdown.css">
-  <link rel="icon" href="./img/logo.png" type="image/png">
+    <meta charset="utf-8">
+    <title>MiniArcade Studios</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="https://cdn-hoverme.netlify.app/hoverme/1.0.4/hoverme.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
-<body class="vbackground">
-  <div class="hero connect-page">
-    <div class="container">
-      <div class="hero-body">
-        <div class="campaign campaign-0">
-          <div class="counter timer">
-            <span class="title">time remaining</span>
-            <div class="counter-boxes">
-              <div class="count-box">
-                <h1 class="value day">0</h1>
-                <span>Days</span>
-              </div>
-              <div class="count-box">
-                <h1 class="value hour">0</h1>
-                <span>Hours</span>
-              </div>
-              <div class="count-box">
-                <h1 class="value minute">0</h1>
-                <span>Minutes</span>
-              </div>
-              <div class="count-box">
-                <h1 class="value second">0</h1>
-                <span>Seconds</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
-  </div>
-  <script src="./js/countdown.js"></script>
+    <!-- Spinner End -->
+    <!-- Navbar Start -->
+    <section id="home"></section>
+    <div class="container-fluid fixed-top px-0 wow fadeIn promo" data-wow-delay="0.1s">
+
+        <div class="top-bar row gx-0 align-items-center d-none d-lg-flex strikermode bg-light">
+            <div class="col-lg-12 text-center">
+                <span class="font-weight-bold text-white mr-2 h6" style="font-family: 'Jost', sans-serif;"> 🆕 PRACTICE
+                    LABS </span>
+                <a href="https://www.fortnite.com/@suja_gg/0863-5119-9660" class="ml-2 underline" target="_blank"
+                    style="font-family: 'Open Sans', sans-serif;">Play Now!</a><span class="ml-2"> 👉</span>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <h1 class="display-5 m-0">MiniArcade Studios</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="#home" class="nav-item nav-link primary">Home</a>
+                    <a href="#about" class="nav-item nav-link primary">About</a>
+                    <a href="#portfolio" class="nav-item nav-link primary">Portfolio</a>
+                    <a href="#team" class="nav-item nav-link primary">Team</a>
+                    <a href="#contact" class="nav-item nav-link primary">Contact</a>
+                </div>
+                <div class="d-none d-lg-flex ms-2">
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3 nav-lin hvr-grow"
+                        href="https://www.instagram.com/miniarcadestudios/" target="_blank">
+                        <small class="fab fa-instagram text-primary"></small>
+                    </a>
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3 nav-link hvr-grow"
+                        href="https://twitter.com/miniarcstudios" target="_blank">
+                        <small class="fab fa-twitter text-primary"></small>
+                    </a>
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3 nav-link hvr-grow"
+                        href="https://www.youtube.com/@MiniArcadeStudios" target="_blank">
+                        <small class="fab fa-youtube text-primary"></small>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/background.webp" alt="background">
+                    <div class="capa">
+                        <video muted autoplay loop>
+                            <source src="./img/videobg.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-8">
+                                    <p
+                                        class="d-inline-block border border-white h2 rounded text-white fw-semi-bold py-1 px-3 animated slideInDown">
+                                        Welcome to Miniarcade</p>
+                                    <h1 class="display-1 mb-4 animated slideInDown">We create, you play.
+                                    </h1>
+                                    <a href="#contact"
+                                        class="py-2 px-3 animated slideInDown animate__animated animate__bounce  animate__delay-1s btnlsz "
+                                        style="font-family: 'Jost', sans-serif">Contact
+                                        us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section id="about"></section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4 align-items-end mb-4">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <img class="img-fluid rounded" src="img/map2.webp">
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h1 class="display-5 mb-4">We create <span style="color: #513fea">immersive</span>
+                        <span style="color: #513fea">experiences</span> for
+                        brands.
+                    </h1>
+
+                    <p class="mb-1">Welcome to MiniArcade Studios, where innovation and excellence come
+                        together in the
+                        thrilling world of video games. We're not just developers; we're visionaries in interactive
+                        experiences. With deep expertise in Unreal Engine, we explore uncharted territories and create
+                        standout experiences in UEFN Creative.
+                        At MiniArcade Studios, our passion goes beyond traditional games, weaving a universe where
+                        quality and creativity meet in gaming excellence.We
+                        understand the importance of crafting unique experiences.
+                        Join us on this exciting journey where innovation, creativity, and expertise collide. MiniArcade
+                        Studios: where gaming dreams come true in Fortnite.
+                    </p>
+                </div>
+            </div>
+            <div class="border rounded p-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="row g-4">
+                    <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="h-100">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary hvr-grow">
+                                    <i class="fa fa-times text-white"></i>
+                                </div>
+                                <div class="ps-3">
+                                    <h4>No Hidden Cost</h4>
+                                    <span>Clear budget communication.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                        <div class="h-100">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary hvr-grow">
+                                    <i class="fa fa-users text-white"></i>
+                                </div>
+                                <div class="ps-3">
+                                    <h4>Dedicated Team</h4>
+                                    <span>Dedicated professionals, at your disposal.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="h-100">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary hvr-float">
+                                    <i class="fa fa-phone text-white"></i>
+                                </div>
+                                <div class="ps-3">
+                                    <h4>24/7 Available</h4>
+                                    <span>We're here for you.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Facts Start -->
+    <div class="container-fluid facts my-5 py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                    <i class="fa fa-map fa-3x text-white mb-3"></i>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">10</h1>
+                    <span class="fs-5 text-white">Projects</span>
+                    <hr class="bg-white w-25 mx-auto mb-0">
+                </div>
+                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+                    <i class="fa fa-gamepad fa-3x text-white mb-3"></i>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">+5000000</h1>
+                    <span class="fs-5 text-white">Total Plays</span>
+                    <hr class="bg-white w-25 mx-auto mb-0">
+                </div>
+                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <i class="fa fa-users-cog fa-3x text-white mb-3"></i>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">3</h1>
+                    <span class="fs-5 text-white">Dedicated Staff</span>
+                    <hr class="bg-white w-25 mx-auto mb-0">
+                </div>
+                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+                    <i class="fa fa-user fa-3x text-white mb-3"></i>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">3000000</h1>
+                    <span class="fs-5 text-white">Unique Players</span>
+                    <hr class="bg-white w-25 mx-auto mb-0">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+    <!-- Projects Start -->
+    <div class="container-xxl py-5" id="portfolio">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s">
+                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Check out our projects
+                </p>
+                <h1 class=" display-5">Latest <span style="color: #513fea">Projects</span></h1>
+                <hr class="bg-primary w-25 mx-auto mb-5">
+            </div>
+            <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.3s">
+                <div class="project-item pe-5 pb-5">
+                    <div class="project-img mb-3">
+                        <img class="img-fluid rounded" src="img/map1.webp" alt="">
+                        <a href="https://www.fortnite.com/@manum697/6145-8874-8958" target="_blank"><i
+                                class="fa fa-link fa-3x text-primary"></i></a>
+                    </div>
+                    <div class="project-title">
+                        <h4 class="mb-0">3V3V3 RANKEDS</h4>
+                    </div>
+                </div>
+                <div class="project-item pe-5 pb-5">
+                    <div class="project-img mb-3">
+                        <img class="img-fluid rounded" src="img/map2.webp" alt="">
+                        <a href="https://www.fortnite.com/@suja_gg/0863-5119-9660" target="_blank"><i
+                                class="fa fa-link fa-3x text-primary"></i></a>
+                    </div>
+                    <div class="project-title">
+                        <h4 class="mb-0">PRACTICE LABS</h4>
+                    </div>
+                </div>
+                <div class="project-item pe-5 pb-5">
+                    <div class="project-img mb-3">
+                        <img class="img-fluid rounded" src="img/map4.webp" alt="">
+                        <a href="https://www.fortnite.com/@mateozroyale/6951-7677-5061" target="_blank"><i
+                                class="fa fa-link fa-3x text-primary"></i></a>
+                    </div>
+                    <div class="project-title">
+                        <h4 class="mb-0">MATEOZ PRACTICE</h4>
+                    </div>
+                </div>
+                <div class="project-item pe-5 pb-5">
+                    <div class="project-img mb-3">
+                        <img class="img-fluid rounded" src="img/map3.webp" alt="">
+                        <a href="https://www.fortnite.com/@manum697/7264-9895-3721" target="_blank"><i
+                                class="fa fa-link fa-3x text-primary"></i></a>
+                    </div>
+                    <div class="project-title">
+                        <h4 class="mb-0">RETAKE REALISTICS [1V1]</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects End -->
+
+
+    <!-- Team End -->
+    <!-- Callback Start -->
+    <div class="container-fluid callback my-5 pt-5" id="contact">
+        <div class="container pt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="bg-white border rounded p-4 p-sm-5 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                            <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Contact us
+                            </p>
+                            <h1 class="display-5 mb-5">
+                                Drop us a
+                                <span style="color: #513fea">message!</span>
+                            </h1>
+                        </div>
+
+                        <form action="https://formsubmit.co/miniarcadestudios@gmail.com" method="POST">
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" name="nombre"
+                                            placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="mail" name="email"
+                                            placeholder="Your Email">
+                                        <label for="mail">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="mobile" name="apellido"
+                                            placeholder="Your Last Name">
+                                        <label for="mobile">Your Last name</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" name="subject"
+                                            placeholder="Subject">
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input class="form-control" type="text" name="mensaje"
+                                            placeholder="Leave a message here" id="message"
+                                            style="height: 100px"></input>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Submit
+                                        Now</button>
+                                </div>
+                                <input type="hidden" name="_next" value="https://www.miniarcadestudios.com/">
+                                <input type="hidden" name="_captcha" value="true">
+                            </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Callback End -->
+    <!-- Team Start -->
+    <div class="container-fluid py-4 align-items-center">
+        <div class="container py-5 mx-auto">
+            <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
+                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Team
+                </p>
+                <h1 class="display-5 w-50 mx-auto" id="team">Our Team Members</h1>
+                <hr class="bg-primary w-25 mx-auto mb-5">
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 wow fadeInUp mt-2" data-wow-delay=".3s">
+                    <div class="rounded team-item">
+                        <img src="img/striker.webp" class="img-fluid w-100 rounded-top border border-bottom-0" alt="">
+                        <div class="team-content bg-primary text-dark text-center py-3">
+                            <span class="fs-4 fw-bold text-white">SrStriker</span>
+                            <p class="mb-0 text-warning">UEFN Designer & Artist</p>
+                        </div>
+                        <div class="team-icon d-flex flex-column ">
+                            <a href="https://twitter.com/SrStriker_" class="btn btn-primary border-0 mb-2"
+                                target="_blank"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 wow fadeInUp mt-2" data-wow-delay=".5s">
+                    <div class="rounded team-item">
+                        <img src="img/code.webp" class="img-fluid w-100 rounded-top border border-bottom-0" alt="">
+                        <div class="team-content bg-primary text-dark text-center py-3">
+                            <span class="fs-4 fw-bold text-white">c0de</span>
+                            <p class="mb-0 text-warning">UEFN Creator & Verse Developer</p>
+                        </div>
+                        <div class="team-icon d-flex flex-column ">
+                            <a href="https://twitter.com/c0dee_" class="btn btn-primary border-0 mb-2"
+                                target="_blank"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 wow fadeInUp mt-2" data-wow-delay=".7s">
+                    <div class="rounded team-item">
+                        <img src="img/manum.webp" class="img-fluid w-100 rounded-top border border-bottom-0" alt="">
+                        <div class="team-content bg-primary text-dark text-center py-3">
+                            <span class="fs-4 text-white">ManuM</span>
+                            <p class="mb-0 text-warning">UEFN Creator & Verse Developer</p>
+                        </div>
+                        <div class="team-icon d-flex flex-column ">
+                            <a href="https://twitter.com/ManuM697" class="btn btn-primary border-0 mb-2"
+                                target="_blank"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 py-3 wow fadeIn" data-wow-delay="0.1s">
+        <div class="d-flex justify-content-center pt-4">
+            <a class="btn btn-square btn-outline-light rounded-circle me-2" href="twitter.com/miniarcstudios"
+                target="_blank"><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                href="https://www.instagram.com/miniarcadestudios/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                href="https://www.youtube.com/@MiniArcadeStudios" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="text-center p-3"> © 2024 MiniArcade Studios</div>
+    </div>
+
+    <!-- Footer End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
