@@ -477,9 +477,15 @@ h6,
 }
 
 .footer-mini {
-    background: #3f66fc;
+    background: linear-gradient(rgba(53, 94, 252, 0.8), rgba(139, 53, 252, 0.9)),
+        url(../img/logo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
+
+
 
 /*VIDEO*/
 
