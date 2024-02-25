@@ -37,7 +37,10 @@
 
 .navbar-light .navbar-toggler-icon {
     background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+    width: 10px;
+    height: 20px;
 }
+
 
 h1,
 .h1,
